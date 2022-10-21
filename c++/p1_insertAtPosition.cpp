@@ -6,7 +6,28 @@ using namespace std;
 vector<int> insert_at_position(vector<int> numlist, int num)
 {
   // Write your code here ...
+  int n = numlist.size();
   
+  if(num<numlist[0])
+  {
+    numlist.insert(numlist.begin() + 0, num);
+    return numlist;
+  }
+  else if(num>numlist[n-1])
+  {
+    numlist.push_back(num);
+    return numlist;
+  }
+  else{
+  for(int i=0;i<n-1;i++)
+  {
+      if(num>numlist[i] && num<numlist[i+1]){
+        numlist.insert(numlist.begin() + i+1, num);
+        break;
+      }
+  }
+  }
+  return numlist;
   
 }
 
