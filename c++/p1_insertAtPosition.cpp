@@ -1,3 +1,12 @@
+/*
+Question Description:
+
+Insert the number "num" at the desired position in vector "numlist".
+Number "num" can be inserted at the position where it is greater than previous and less than next element.
+If number "num" is lowest then insert at 1st position else if highest, then insert at last position.
+In any other case return "numlist".
+*/
+
 #include <iostream>
 #include <vector>
 #include <bits/stdc++.h>
