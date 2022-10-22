@@ -9,6 +9,16 @@ Problem solving Programming questions in C++ and Python
 
 Before proceeding read => [How to contribute](https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/CONTRIBUTING.md)
 
+## Languages used :
+* C++
+* Python
+
 Before raising PR, make sure you were assigned to that issue.
 
 Thank you everyone for your participation!!
+
+### Our Contributors:
+
+<a href="https://github.com/Akash88585/ProgrammingProblemSolving/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Alok5102R/whichcar" />
+</a>
