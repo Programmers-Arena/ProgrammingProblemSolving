@@ -16,7 +16,7 @@ def numberGames(nlist):
 
 numlist=[]
 
-numlist = [3, 12, 6, 20, 15, 19] # Input1
+numlist = [3, 12, 7, 20, 15, 19] # Input1
 # Comment Input1 to provide your inputs
 
 if(len(numlist)==0):
