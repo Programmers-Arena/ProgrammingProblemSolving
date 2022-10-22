@@ -1,6 +1,5 @@
 /*
 Question Description:
-
 Given a list "numlist" of numbers, perform the following operations:
 If number is completely divisible by 3, then add 5 in it.
 Otherwise if, number is even and at the even position then insert 2 at the end in list.
@@ -14,6 +13,22 @@ using namespace std;
 vector<int> numberGames(vector<int> nlist)
 {
   // Write your code here ...
+  int cnt=0;
+  for(int i=0;i<nlist.size();i++)
+  {
+      if(nlist[i]%3==0)
+          nlist[i] += 5;
+      else if((i+1)%2==0 && nlist[i]%2==0)
+          cnt++;
+      else
+          nlist[i] = 0;
+  }
+  while(cnt>0)
+  {
+      nlist.push_back(2);
+      cnt--;
+  }
+  return nlist;
 }
 
 
