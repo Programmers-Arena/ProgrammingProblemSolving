@@ -8,9 +8,18 @@ In any other case return "numlist".
 """
 
 def insert_at_position(numlist, num):
-  # Write your code here ...
+    index = len(numlist)
+    for i in range(len(numlist)):
+        if numlist[i] > n:
+            index = i
+            break
+    if index == len(numlist):
+        numlist = numlist[:index] + [n]
+    else:
+        numlist = numlist[:index] + [n] + numlist[index:]
+    return numlist
   
-  pass
+    pass
 
 
 
@@ -37,5 +46,4 @@ nlist = insert_at_position(nlist, n)
 print(nlist)
 
 # Expected Output : [2, 6, 9, 11, 13, 15, 18]
-
 
