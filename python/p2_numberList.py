@@ -8,8 +8,15 @@ Otherwise, make the element 0.
 
 def numberGames(nlist):
   # Write your code here ...
-  
-  pass
+  for i in range(0,len(nlist)):
+      if(nlist[i]%3==0):
+          nlist[i] += 5
+      elif((i+1)%2==0 and nlist[i]%2==0):
+          nlist.append(2)
+      else:
+          nlist[i] = 0
+          
+  return nlist
 
 
 # +++++++++++ Don't write code below this line ++++++++++++
