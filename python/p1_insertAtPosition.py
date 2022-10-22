@@ -14,6 +14,8 @@ def insert_at_position(numlist, num):
 
 
 
+# +++++++++++ Don't write code below this line ++++++++++++
+
 n = None
 
 nlist = [2, 6, 9, 13, 15, 18] # Input1
@@ -22,8 +24,8 @@ n = 11  # Input2
 
 if(len(nlist)==0):
   x = int(input("Enter number of elements: "))
-  print("Enter elements in vector: ")
-  for i in range(0,len(nlist)):
+  print("Enter elements in list: ")
+  for i in range(0,x):
     a = int(input())
     nlist.append(a)
 
