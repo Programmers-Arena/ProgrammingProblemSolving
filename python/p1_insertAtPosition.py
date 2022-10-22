@@ -1,3 +1,12 @@
+"""
+Question Description:
+
+Insert the number "num" at the desired position in list "numlist".
+Number "num" can be inserted at the position where it is greater than previous and less than next element.
+If number "num" is lowest then insert at 1st position else if highest, then insert at last position.
+In any other case return "numlist".
+"""
+
 def insert_at_position(numlist, num):
   # Write your code here ...
   
