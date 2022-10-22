@@ -1,9 +1,9 @@
 /*
 Question Description:
-Given a list "numlist" of numbers, perform the following operations:
-If number is completely divisible by 3, then add 5 in it.
-Otherwise if, number is even and at the even position then insert 2 at the end in list.
-Otherwise, make the element 0.
+
+Given two lists "numlist1" and "numlist2" of numbers.
+Merge the common elements of both the lists into a list.
+Return merged list with unique elements.
 */
 
 #include <iostream>
