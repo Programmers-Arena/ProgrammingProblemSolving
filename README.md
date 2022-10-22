@@ -20,5 +20,5 @@ Thank you everyone for your participation!!
 ### Our Contributors:
 
 <a href="https://github.com/Akash88585/ProgrammingProblemSolving/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Alok5102R/whichcar" />
+  <img src="https://contrib.rocks/image?repo=Akash88585/ProgrammingProblemSolving" />
 </a>
