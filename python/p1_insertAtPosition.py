@@ -1,35 +1,38 @@
-def insert_at_position(list, n):
-
-    index = len(list)
-    for i in range(len(list)):
-        if list[i] > n:
+def insert_at_position(numlist, num):
+    index = len(numlist)
+    for i in range(len(numlist)):
+        if numlist[i] > n:
             index = i
             break
-    if index == len(list):
-        list = list[:index] + [n]
+    if index == len(numlist):
+        numlist = numlist[:index] + [n]
     else:
-        list = list[:index] + [n] + list[index:]
-    return list
+        numlist = numlist[:index] + [n] + numlist[index:]
+    return numlist
+  
+    pass
+
 
 
 n = None
 
-list = [2, 6, 9, 13, 15, 18]  # Input1
+nlist = [2, 6, 9, 13, 15, 18] # Input1
 n = 11  # Input2
 # Comment Input1 and Input2 to provide your inputs
 
-if (len(list) == 0):
-    x = int(input("Enter number of elements: "))
-    print("Enter elements in vector: ")
-    for i in range(0, len(list)):
-        a = int(input())
-        list.append(a)
+if(len(nlist)==0):
+  x = int(input("Enter number of elements: "))
+  print("Enter elements in vector: ")
+  for i in range(0,len(nlist)):
+    a = int(input())
+    nlist.append(a)
 
 
-if (n == None):
-    n = int(input("Enter number to insert: "))
+if(n==None):
+  n = int(input("Enter number to insert: "))
 
-list = insert_at_position(list, n)
-print(list)
+nlist = insert_at_position(nlist, n)
+print(nlist)
 
 # Expected Output : [2, 6, 9, 11, 13, 15, 18]
+
