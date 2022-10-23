@@ -1,128 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Programmer's Arena</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="img/logo.png"
-      class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full"
-    />
-    <style>
-      /* Three image containers (use 25% for four, and 50% for two, etc) */
-      .column {
-        float: left;
-        width: 50%;
-        padding: 5px;
-      }
 
-      /* Clear floats after image containers */
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-    </style>
-  </head>
-  <body>
-    <h1 class="text-center text-5xl"><a class="text-green-500">《 </a> Programmer's Arena <a class="text-green-500">》</a></h1>
-    <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex flex-wrap w-full">
-            <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+<head>
+  <title>Programmer's Arena</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/logo.png" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full" />
+  <style>
+    body {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
 
 
-              <div class="flex relative pb-12">
-                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
-                  <img src="img/cd.svg" class="w-6 h-6">
-                </div>
-                <div class="flex-grow pl-4">
-                  <h2 class="font-medium title-font text-xl text-gray-900 mb-1 tracking-wider">P1 : Insert at position</h2>
-                  <p class="leading-relaxed">Insert the number "num" at the desired position in list "numlist".<br>
-                    Number "num" can be inserted at the position where it is greater than previous and less than next element.<br>
-                    If number "num" is lowest then insert at 1st position else if highest, then insert at last position.<br>
-                    In any other case return "numlist".</p><br>
-                  <h4 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Choose Preferred Language :</h2>
-                  <div class="row">
-                    <a href="https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/python/p1_insertAtPosition.py" class="hover:text-green-400" target="_blank">
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    img {
+      object-fit: cover !important;
+    }
+  </style>
+</head>
+
+<body background="./img/page-bg.svg">
+  <h1 class="text-center text-5xl"><a class="text-green-500">《 </a> Programmer's Arena <a class="text-green-500">》</a>
+  </h1>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex flex-wrap w-full">
+        <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+
+
+          <div class="flex relative pb-12">
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
+              <img src="img/cd.svg" class="w-6 h-6">
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-xl text-gray-900 mb-1 tracking-wider">P1 : Insert at position</h2>
+              <p class="leading-relaxed">Insert the number "num" at the desired position in list "numlist".<br>
+                Number "num" can be inserted at the position where it is greater than previous and less than next
+                element.<br>
+                If number "num" is lowest then insert at 1st position else if highest, then insert at last position.<br>
+                In any other case return "numlist".</p><br>
+              <h4 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Choose Preferred Language :
+                </h2>
+                <div class="row">
+                  <a href="https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/python/p1_insertAtPosition.py"
+                    class="hover:text-green-400" target="_blank">
                     <div class="column">
                       <img src="img/py.png" class="w-10 h-10">
                       <h4>Python 🞂</h4>
                     </div>
-                    </a>
-                    <a href="https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/c%2B%2B/p1_insertAtPosition.cpp" class="hover:text-green-400" target="_blank">
+                  </a>
+                  <a href="https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/c%2B%2B/p1_insertAtPosition.cpp"
+                    class="hover:text-green-400" target="_blank">
                     <div class="column">
                       <img src="img/cpp.png" class="w-10 h-10 ">
                       <h4>C++ 🞂</h4>
                     </div>
-                    </a>
-                  </div>
+                  </a>
                 </div>
-              </div>
-
-              <div class="flex relative pb-12">
-                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
-                  <img src="img/cd.svg" class="w-6 h-6">
-                </div>
-                <div class="flex-grow pl-4">
-                  <h2 class="font-medium title-font text-xl text-gray-900 mb-1 tracking-wider">P2 : Number Games</h2>
-                  <p class="leading-relaxed">Given a list "numlist" of numbers, perform the following operations:<br>
-                    If number is completely divisible by 3, then add 5 in it.<br>
-                    Otherwise if, number is even and at the even position then insert 2 at the end in list.<br>
-                    Otherwise, make the element 0.</p><br>
-                  <h4 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Choose Preferred Language :</h2>
-                  <div class="row">
-                    <a href="https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/python/p2_numberList.py" class="hover:text-green-400" target="_blank">
-                    <div class="column">
-                      <img src="img/py.png" class="w-10 h-10">
-                      <h4>Python 🞂</h4>
-                    </div>
-                    </a>
-                    <a href="https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/c%2B%2B/p2_numberGames.cpp" class="hover:text-green-400" target="_blank">
-                    <div class="column">
-                      <img src="img/cpp.png" class="w-10 h-10 ">
-                      <h4>C++ 🞂</h4>
-                    </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex relative pb-12">
-                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
-                  <img src="img/cd.svg" class="w-6 h-6">
-                </div>
-                <div class="flex-grow pl-4">
-                  <h2 class="font-medium title-font text-xl text-gray-900 mb-1 tracking-wider">P3 : Merge Common Elements</h2>
-                  <p class="leading-relaxed">Given two lists "numlist1" and "numlist2" of numbers.<br>
-                  Merge the common elements of both the lists into a list.<br>
-                  Return merged list with unique elements.</p><br>
-                  <h4 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Choose Preferred Language :</h2>
-                  <div class="row">
-                    <a href="https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/python/p3_mergeCommonElements.py" class="hover:text-green-400" target="_blank">
-                    <div class="column">
-                      <img src="img/py.png" class="w-10 h-10">
-                      <h4>Python 🞂</h4>
-                    </div>
-                    </a>
-                    <a href="https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/c%2B%2B/p3_mergeCommonElements.cpp" class="hover:text-green-400" target="_blank">
-                    <div class="column">
-                      <img src="img/cpp.png" class="w-10 h-10 ">
-                      <h4>C++ 🞂</h4>
-                    </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              
             </div>
           </div>
+
+          <div class="flex relative pb-12">
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
+              <img src="img/cd.svg" class="w-6 h-6">
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-xl text-gray-900 mb-1 tracking-wider">P2 : Number Games</h2>
+              <p class="leading-relaxed">Given a list "numlist" of numbers, perform the following operations:<br>
+                If number is completely divisible by 3, then add 5 in it.<br>
+                Otherwise if, number is even and at the even position then insert 2 at the end in list.<br>
+                Otherwise, make the element 0.</p><br>
+              <h4 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Choose Preferred Language :
+                </h2>
+                <div class="row">
+                  <a href="https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/python/p2_numberList.py"
+                    class="hover:text-green-400" target="_blank">
+                    <div class="column">
+                      <img src="img/py.png" class="w-10 h-10">
+                      <h4>Python 🞂</h4>
+                    </div>
+                  </a>
+                  <a href="https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/c%2B%2B/p2_numberGames.cpp"
+                    class="hover:text-green-400" target="_blank">
+                    <div class="column">
+                      <img src="img/cpp.png" class="w-10 h-10 ">
+                      <h4>C++ 🞂</h4>
+                    </div>
+                  </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="flex relative pb-12">
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
+              <img src="img/cd.svg" class="w-6 h-6">
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-xl text-gray-900 mb-1 tracking-wider">P3 : Merge Common Elements
+              </h2>
+              <p class="leading-relaxed">Given two lists "numlist1" and "numlist2" of numbers.<br>
+                Merge the common elements of both the lists into a list.<br>
+                Return merged list with unique elements.</p><br>
+              <h4 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Choose Preferred Language :
+                </h2>
+                <div class="row">
+                  <a href="https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/python/p3_mergeCommonElements.py"
+                    class="hover:text-green-400" target="_blank">
+                    <div class="column">
+                      <img src="img/py.png" class="w-10 h-10">
+                      <h4>Python 🞂</h4>
+                    </div>
+                  </a>
+                  <a href="https://github.com/Akash88585/ProgrammingProblemSolving/blob/main/c%2B%2B/p3_mergeCommonElements.cpp"
+                    class="hover:text-green-400" target="_blank">
+                    <div class="column">
+                      <img src="img/cpp.png" class="w-10 h-10 ">
+                      <h4>C++ 🞂</h4>
+                    </div>
+                  </a>
+                </div>
+            </div>
+          </div>
+
+
         </div>
-      </section>
-      <br><br>
-    <h5 class="text-center text-xl">Designed By : <a class="text-green-500" href="https://github.com/akash88585">Akash Kumar</a></h5><br><br>
-  </body>
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <h5 class="text-center text-xl">Designed By : <a class="text-green-500" href="https://github.com/akash88585">Akash
+      Kumar</a></h5><br><br>
+</body>
+
 </html>
