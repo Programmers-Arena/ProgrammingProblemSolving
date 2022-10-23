@@ -1,6 +1,5 @@
 """
 Question Description:
-
 Given two lists "numlist1" and "numlist2" of numbers.
 Merge the common elements of both the lists into a list.
 Return merged list with unique elements.
@@ -9,8 +8,14 @@ Return merged list with unique elements.
 
 def mergeCommonElements(nlist1, nlist2):
   # Write your code here ...
-  return nlist2
-  pass
+  nlist1 = set(nlist1)
+  nlist2 = set(nlist2)
+  ans = []
+  for s in nlist1:
+      if s in nlist2:
+          ans.append(s)
+  
+  return ans
   
 
   
