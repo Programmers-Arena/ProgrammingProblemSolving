@@ -1,6 +1,5 @@
 /*
 Question Description:
-
 Given two lists "numlist1" and "numlist2" of numbers.
 Merge the common elements of both the lists into a list.
 Return merged list with unique elements.
@@ -8,11 +7,28 @@ Return merged list with unique elements.
 
 #include <iostream>
 #include <vector>
+#include <set>
 using namespace std;
 
 vector<int> mergeCommonElements(vector<int> nlist1, vector<int> nlist2)
 {
   // Write your code here ...
+  set<int> st1,st2;
+  set<int> :: iterator itr;
+  vector<int> vct;
+  
+  for(int i=0;i<nlist1.size();i++)
+      st1.insert(nlist1[i]);
+      
+  for(int i=0;i<nlist2.size();i++)
+      st2.insert(nlist2[i]);
+      
+  for(itr=st1.begin();itr!=st1.end();itr++)
+  {
+      if(st2.find(*itr)!=st2.end())
+        vct.push_back(*itr);
+  }
+  return vct;
   
 }
 
