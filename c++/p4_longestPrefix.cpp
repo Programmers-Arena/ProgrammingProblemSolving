@@ -3,8 +3,6 @@ Given an array of strings, you need to find the longest prefix among all of them
 If no prefix found then simply return 0.
 All strings should be in capital letters.
 
-Output: fl
-
 !! Do not hard code !!
 */
 
@@ -13,7 +11,8 @@ Output: fl
 using namespace std;
 
 int main() {
-    vector<string> arr = {"flower","flow","flex"};
+    vector<string> arr1 = {"RAIL","RAIN","RAM"};           // Output: ra
+    vector<string> arr2 = {"STORE","FIRE","STOVE"};        // Output: 0
     // Start code from below:
 
 
