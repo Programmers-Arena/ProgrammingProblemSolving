@@ -1,3 +1,14 @@
+"""
+Find the largest continuous Array sum of the given Array.
+Array will contain negative elements as well.
+
+!! Do not hard code !!
+"""
+
+nums = [ 0, 4, -7, -3, 8, -9, 1, 6, 5, -2 ]  # Output: 12
+
+# Start code from here
+
 def maxSubArray(nums):
     max_sum = float('-inf')
     current_sum = 0
@@ -12,10 +23,6 @@ def maxSubArray(nums):
             current_sum = 0
 
     return max_sum
-
-# Take user input for the list of numbers
-user_input = input("Enter a list of numbers separated by spaces: ")
-nums = list(map(int, user_input.split()))
 
 result = maxSubArray(nums)
 print("Maximum Subarray Sum:",result)
