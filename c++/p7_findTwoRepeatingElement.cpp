@@ -6,11 +6,12 @@ Array is provided.
 */
 
 #include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    vector<int> arr = { 4, 2, 4, 5, 2, 3, 1 };
+    vector<int> arr = { 5, 0, 2, -3, 3, 1, 6, 4, 2, 0 };  // Output: Repeating -> 0, 2
     int size = arr.size();
    
     // Start writing code from here
