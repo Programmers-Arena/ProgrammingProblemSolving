@@ -1,7 +1,6 @@
 /*
 Find the largest continuous Array sum of the given Array.
 Array will contain negative elements as well.
-File location: c++/p6_LargestContinuousArraySum.cpp
 */
 
 #include <iostream>
