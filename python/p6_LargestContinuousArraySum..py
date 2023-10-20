@@ -18,4 +18,4 @@ user_input = input("Enter a list of numbers separated by spaces: ")
 nums = list(map(int, user_input.split()))
 
 result = maxSubArray(nums)
-print("Maximum Subarray Sum:", result)
+print("Maximum Subarray Sum:",result)
