@@ -1,3 +1,10 @@
+/*
+Find the largest continuous Array sum of the given Array.
+Array will contain negative elements as well.
+
+!! Do not hard code !!
+*/
+
 #include <bits/stdc++.h>
 #include <iostream>
 using namespace std;
