@@ -14,7 +14,9 @@ Before proceeding read => [How to contribute](https://github.com/Akash88585/Prog
 * Python
 * HTML
 
-Before raising PR, make sure you were assigned to that issue.
+## Prerequisites :
+* Before raising PR, make sure you were assigned to that issue.
+* Do not create your own file, edit the existing file.
 
 Thank you everyone for your participation!!
 
