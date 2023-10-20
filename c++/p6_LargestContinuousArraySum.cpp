@@ -15,6 +15,19 @@ int main()
     int n = arr.size();
 
     //Start code from below
+
+    int limitb = INT_MIN, limite = 0;
+ 
+    for (int i = 0; i < n; i++) {
+        limite = limite + arr[i];
+        if (limitb < limite)
+            limitb = limite;
+ 
+        if (limite < 0)
+            limite = 0;
+    }
+  
+    cout<<limitb;
  
     
     return 0;
